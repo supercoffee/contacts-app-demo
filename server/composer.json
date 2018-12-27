@@ -1,0 +1,12 @@
+{
+    "require": {
+        "league/route": "^4.2",
+        "zendframework/zend-diactoros": "^2.1",
+        "narrowspark/http-emitter": "^0.7.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}
