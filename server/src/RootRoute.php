@@ -20,8 +20,11 @@ class RootRoute implements Route
 
     function handleRequest(ServerRequestInterface $request): ResponseInterface
     {
-        $response = new Response;
-        $response->getBody()->write("<h1> hello world</h1>");
+        $response = (new Response())->withHeader("Content-type", "application/json");
+        $body = [
+            "message" => "Welcome to the Contact manager API"
+        ];
+        $response->getBody()->write(json_encode($body));
         return $response;
     }
 }

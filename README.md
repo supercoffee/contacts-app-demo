@@ -9,3 +9,33 @@ Lightweight REST API for managing contacts implemented in PHP. No DBMS or auth f
 
 ## Client
 Android CRUD app for managing contacts. Syncs with server.
+
+
+## REST API (v0)
+
+### Welcome
+URL: `/`
+
+Response 
+
+```
+{
+	"message": "Welcome to the Contact manager API"
+}
+```
+
+### Types
+
+#### People
+
+* Index URL: GET `/people/`
+* GET/PUT/DELETE URL:  `/people/{id}`
+* CREATE URL: `/people`
+
+Attributes:
+
+* name
+* email
+* phone number
+
+
